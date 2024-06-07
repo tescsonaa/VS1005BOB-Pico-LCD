@@ -1,0 +1,30 @@
+Building YD-RP2040 MicroPython From Source
+
+$ cd ~/
+$ mkdir pico
+$ cd pico
+
+
+$ git clone https://github.com/mhidro/micropython-vcc-gnd-studio-YD-RP2040.git
+
+if fatel: early EOF fatel: index-pack failed 
+	git config --global core.compression 0 
+	or 
+	$ git clone https://github.com/mhidro/micropython-vcc-gnd-studio-YD-RP2040.git --deptcd h 1
+
+
+$ cd micropython-vcc-gnd-studio-YD-RP2040 
+$ make -C ports/rp2 submodules
+
+
+$ sudo apt update
+$ sudo apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
+
+
+$ make -C mpy-cross
+
+$ cd ports/rp2
+$ make BOARD=VCC_GND_YD_RP2040 BOARD_VARIANT=flash_8mb submodules all  # Build the 8 MiB 
+
+
+
