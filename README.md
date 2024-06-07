@@ -17,6 +17,6 @@ VS1005BOB + YD_RP2040 + LCD 1.77"
 
 
 Reference: 
-1. 
 1. https://github.com/boochow/MicroPython-ST7735
-2. https://forum.micropython.org/viewtopic.php?t=5980 
+2. https://github.com/russhughes/st7789_mpy 
+3. https://forum.micropython.org/viewtopic.php?t=5980 
